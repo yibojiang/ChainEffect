@@ -43,19 +43,18 @@ class Enemy extends Entity{
 		
 		while(stage==0){
 			Debug.Log("wandering");
-			yield WaitForSeconds(3);
 
+			yield WaitForSeconds(Random.Range(1.0,3.0));
+			anim.Play("Attack2");
+			yield WaitForSeconds(Random.Range(2.0,3.0));
 			Flip();
 
 			vel.x=GetFlipDir();
 
-			yield WaitForSeconds(3);
+			yield WaitForSeconds(4);
 			vel.x=0;
 
-			yield WaitForSeconds(3);
-			anim.Play("Attack2");
-			
-			yield WaitForSeconds(1);
+			yield WaitForSeconds(Random.Range(2.0,3.0));
 		}
 		
 	}
