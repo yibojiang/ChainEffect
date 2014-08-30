@@ -2,12 +2,6 @@
 
 var start:float;
 var end:float;
-
-
-function Start () {
-
-}
-
-function Update () {
-
-}
+var loopLeft:float;
+var loopRight:float;
+var bornTransform:Transform;

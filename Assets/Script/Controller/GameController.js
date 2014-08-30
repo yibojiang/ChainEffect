@@ -9,9 +9,11 @@ public static function Instance() : GameController
 }
 
 var scenes:Scene[];
+var player:Player;
 
 function LoadScene(_scene:Scene){
 	CameraController.Instance().SetClamp(_scene.start,_scene.end);
+	player.transform.position=_scene.bornTransform.position;
 }
 
 function Start () {

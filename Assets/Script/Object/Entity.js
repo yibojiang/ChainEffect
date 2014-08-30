@@ -75,6 +75,12 @@ function SetRenderQueue(_renderQueue:int){
 	}
 }
 
+function Awake(){
+	if (body!=null){
+		bodyParts=body.gameObject.GetComponentsInChildren.<Transform>(true);
+	}
+}
+
 
 function Start () {
 
