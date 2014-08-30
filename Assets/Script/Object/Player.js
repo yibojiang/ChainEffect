@@ -6,32 +6,68 @@ class Player extends Entity{
 	var controlOn:boolean=true;
 	var hurtForce:float=150;
 
-	var hurtState :int= Animator.StringToHash("Base Layer.Hurt");  
+	var hurtState :int= Animator.StringToHash("Base Layer.Hurt");
+	var atkState :int= Animator.StringToHash("Base Layer.Attack");
+
+
 
 	function Start(){
 		super.Start();
 		hurtState=Animator.StringToHash("Base Layer.Hurt");  
+		atkState= Animator.StringToHash("Base Layer.Attack");
 	}
 
 	function Update(){
 		var device:InputDevice=InputManager.ActiveDevice;
 
-
-
-		anim.SetFloat("Speed", Mathf.Abs(vel.x));
+		
 
 		if (controlOn){
-			vel.x=device.Direction.X*10;	
+			if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState 
+				&& anim.GetCurrentAnimatorStateInfo(0).nameHash != atkState 
+				&& !anim.IsInTransition(0) 
+				){
+				if (device.LeftStickX.IsPressed){
+					vel.x=device.Direction.X*maxWalkSpeed;
+				}
+				else{
+					if (Input.GetKey(KeyCode.LeftArrow)){
+						vel.x=-maxWalkSpeed;		
+					}
+					else if (Input.GetKey(KeyCode.RightArrow)){
+						vel.x=maxWalkSpeed;		
+					}
+					else{
+						vel.x=0;
+					}
+				}
+
+				anim.SetFloat("Speed", Mathf.Abs(vel.x));
+			
+			}
+				
+			
+
+			if(device.Action3.WasPressed || Input.GetKeyDown(KeyCode.Z) ){
+				Attack();
+			}
 		}
+
+		
 
 		super.Update();
 		//Debug.Log(anim.GetCurrentAnimatorStateInfo(0).nameHash );
 
 	}
 
+	function Attack(){
+		vel.x=0;
+		anim.SetTrigger("Attack");
+	}
+
 	function Hurt(_dir:int){
 		
-		if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState && !anim.IsInTransition(0) && anim.GetCurrentAnimatorStateInfo(0).normalizedTime>1){
+		if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState && !anim.IsInTransition(0) ){
 			vel.x=0;
 			//Debug.Log(Time.time+": Hurt");
 			
@@ -47,7 +83,7 @@ class Player extends Entity{
 			anim.SetTrigger("Hurt");
 		}
 		else{
-			Debug.Log("in state, not hurt");
+			//Debug.Log("in state, not hurt");
 		}
 
 

@@ -15,9 +15,6 @@ class Enemy extends Entity{
 	var attackArea:Transform;
 	var attackRange:float=0.05;
 
-	var flipToggle:float;
-	var flipInterval:float=2;
-
 	function SetTarget(_ent:Player){
 		target=_ent;
 	}
@@ -42,7 +39,7 @@ class Enemy extends Entity{
 		*/
 		
 		while(stage==0){
-			Debug.Log("wandering");
+			//Debug.Log("wandering");
 
 			yield WaitForSeconds(Random.Range(1.0,3.0));
 			anim.Play("Attack2");

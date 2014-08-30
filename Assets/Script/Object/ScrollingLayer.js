@@ -1,19 +1,10 @@
 ﻿#pragma strict
 var speedFactor:float;
-var objs:SrollingObj[];
+var objs:ScrollingObj[];
 var scene:Scene;
 
 
 function Awake(){
-	objs=this.gameObject.GetComponentsInChildren.<SrollingObj>(true);
-
-
+	objs=this.gameObject.GetComponentsInChildren.<ScrollingObj>(true);
 }
 
-function Start () {
-
-}
-
-function Update () {
-	
-}

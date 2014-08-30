@@ -10,6 +10,8 @@ var normalDir:int=1;
 var maxWalkSpeed:float=20;
 
 var vel:Vector3;
+var HP:float;
+var maxHP:float;
 
 function SetDir(_dir:int){
 	
@@ -83,7 +85,7 @@ function Awake(){
 
 
 function Start () {
-
+	HP=maxHP;
 }
 
 function Update () {
