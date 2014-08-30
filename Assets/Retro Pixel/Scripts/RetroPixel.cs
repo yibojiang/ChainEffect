@@ -80,6 +80,7 @@ namespace AlpacaSound
 				
 				material.SetColor ("_Color0", color0);
 				material.SetColor ("_Color1", color1);
+				
 				if (numColors > 2) material.SetColor ("_Color2", color2);
 				if (numColors > 3) material.SetColor ("_Color3", color3);
 				if (numColors > 4) material.SetColor ("_Color4", color4);
