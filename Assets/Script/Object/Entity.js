@@ -12,6 +12,7 @@ var maxWalkSpeed:float=20;
 var vel:Vector3;
 
 function SetDir(_dir:int){
+	
 	flipDir=_dir % 2;
 	if (body==null){
 		return;
@@ -95,4 +96,11 @@ function Update () {
 		transform.position+=vel*Time.deltaTime;
 
 	}
+}
+
+function Die(){
+	alive=false;
+	Debug.Log(gameObject.name+" :Die");
+	this.gameObject.GetComponent(Collider2D).enabled=false;
+	this.gameObject.GetComponent(Rigidbody2D).Sleep();
 }
