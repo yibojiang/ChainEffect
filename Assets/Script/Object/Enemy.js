@@ -1,17 +1,18 @@
 ﻿#pragma strict
 
-class Player extends Entity{
-	var playerAnim:Animator;
+class Enemy extends Entity{
+
+	var anim:Animator;
 
 	function Update(){
 		var device:InputDevice=InputManager.ActiveDevice;
 
 		
 		if (Mathf.Abs(vel.x)>0){
-			playerAnim.Play("Player_Walk");
+			anim.Play("Walk");
 		}
 		else{
-			playerAnim.Play("Player_Idle");
+			anim.Play("Idle");
 		}
 		vel.x=device.Direction.X*10;
 

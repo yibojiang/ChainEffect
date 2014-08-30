@@ -7,7 +7,6 @@ var bodyParts:Transform[];
 var alive:boolean;
 var normalDir:int=1;
 
-var walkSpeed:float;
 var maxWalkSpeed:float=20;
 
 var vel:Vector3;
@@ -82,7 +81,17 @@ function Start () {
 
 function Update () {
 	if (alive){
-		
+		if (vel.x>0){
+			SetDir(0);
+		}
+		else if (vel.x<0){
+			SetDir(1);
+		}
+
+		if (Mathf.Abs(vel.x)>maxWalkSpeed ){
+			vel.x=maxWalkSpeed*GetFlipDir();
+		}
+
 		transform.position+=vel*Time.deltaTime;
 
 	}
