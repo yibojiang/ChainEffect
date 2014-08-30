@@ -565,8 +565,21 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets"
+	],
 	"file_history":
 	[
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Retro Pixel/Scripts/RetroPixel.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Game.unity.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Game.unity",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/GlobalFog.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/_BloomAndFlares/BlendOneOne.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Water.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Sources/Materials/Water Splash1.mat",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/TwirlEffect.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Water/Water Fountain.prefab",
 		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Database/ConfigHelper.js",
 		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_CatSlotMachineMenu.js",
 		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/FrozenGunController.js",
@@ -685,20 +698,11 @@
 		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Skill/SkullheartController.js",
 		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/SkullHeart_MouthOpen.anim.meta",
 		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/SkullHeart_MouthClose.anim.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/SkullHeart_MouthOpen.anim",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Audio/Sound/skull.wav",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Skill.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/BubbleBall.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Prefab/Weapon/BubbleBall.prefab",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Skill/BubbleGunController.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/AndroidPlugins/AndroidOriginal/Android/bugsnag-unity.jar.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Body.controller",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/NewTexture/Positron/Positron.mat",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/NewTexture/Positron/Positron.asset"
+		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/SkullHeart_MouthOpen.anim"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -714,6 +718,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"oldNumColors",
+			"numColors",
+			"color2",
 			"true",
 			" ",
 			"();\n",
@@ -838,10 +845,7 @@
 			"gameresume",
 			"gamepause",
 			"wait",
-			"reset",
-			"head",
-			"gamestart",
-			"addusetimes"
+			"reset"
 		],
 		"highlight": true,
 		"in_selection": false,
