@@ -13,6 +13,7 @@ var player:Player;
 
 function LoadScene(_scene:Scene){
 	CameraController.Instance().SetClamp(_scene.start,_scene.end);
+	CameraController.Instance().SetLayers(_scene);
 	player.transform.position=_scene.bornTransform.position;
 }
 
