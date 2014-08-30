@@ -33,7 +33,7 @@ class Player extends Entity{
 		
 		if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState && !anim.IsInTransition(0) && anim.GetCurrentAnimatorStateInfo(0).normalizedTime>1){
 			vel.x=0;
-			Debug.Log(Time.time+": Hurt");
+			//Debug.Log(Time.time+": Hurt");
 			
 			if (_dir<0){
 				SetDir(1);

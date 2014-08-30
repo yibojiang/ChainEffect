@@ -15,6 +15,9 @@ class Enemy extends Entity{
 	var attackArea:Transform;
 	var attackRange:float=0.05;
 
+	var flipToggle:float;
+	var flipInterval:float=2;
+
 	function SetTarget(_ent:Player){
 		target=_ent;
 	}
@@ -26,6 +29,35 @@ class Enemy extends Entity{
 	function Start(){
 		super.Start();
 		atakState= Animator.StringToHash("Base Layer.Attack"); 
+		Wander();
+	}
+
+	function Wander(){
+		/*
+		flipToggle+=Time.deltaTime;
+		if (flipToggle>=flipInterval){
+			flipToggle-=flipInterval;
+			Flip();
+		}
+		*/
+		
+		while(stage==0){
+			Debug.Log("wandering");
+			yield WaitForSeconds(3);
+
+			Flip();
+
+			vel.x=GetFlipDir();
+
+			yield WaitForSeconds(3);
+			vel.x=0;
+
+			yield WaitForSeconds(3);
+			anim.Play("Attack2");
+			
+			yield WaitForSeconds(1);
+		}
+		
 	}
 
 	function Update(){
@@ -35,17 +67,22 @@ class Enemy extends Entity{
 			if (sightHit){
 				//Debug.Log("player in sight");
 				target=sightHit.collider.gameObject.GetComponent(Entity) as Entity;
-				
+				StopCoroutine("Wander");
+				//StopAllCoroutines();
 				stage=1;
 			}
 			else{
-				stage=0;
-				target=null;
+				if (target!=null){
+					vel.x=0;
+					stage=0;
+					target=null;
+					Wander();
+				}
+				
 			}
 
 			if (stage==0){
 				//do some things search player.
-				
 			}
 			else if (stage==1){
 				//see player and chase player
