@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4aaee4acba12d46f5b8dff31d0e12358
+guid: baa01723554c04672bf14fc6ebb4a3c5
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -20,10 +20,10 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 1
     mipBias: -1
     wrapMode: 1
@@ -42,23 +42,43 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: girlSit_0
+    - name: heroRun_withGirl_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 6
         y: 0
-        width: 15
-        height: 16
+        width: 21
+        height: 22
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: girlSit_1
+    - name: heroRun_withGirl_1
       rect:
         serializedVersion: 2
-        x: 41
+        x: 38
         y: 0
-        width: 14
-        height: 16
+        width: 20
+        height: 22
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: heroRun_withGirl_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 0
+        width: 20
+        height: 22
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: heroRun_withGirl_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 20
+        height: 22
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

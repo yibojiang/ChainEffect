@@ -20,13 +20,13 @@ class Player extends Entity{
 	function Update(){
 		var device:InputDevice=InputManager.ActiveDevice;
 
-		
 
-		if (controlOn){
-			if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState 
-				&& anim.GetCurrentAnimatorStateInfo(0).nameHash != atkState 
-				&& !anim.IsInTransition(0) 
-				){
+		if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState 
+			&& anim.GetCurrentAnimatorStateInfo(0).nameHash != atkState 
+			&& !anim.IsInTransition(0) 
+			){
+
+			if (controlOn){
 				if (device.LeftStickX.IsPressed){
 					vel.x=device.Direction.X*maxWalkSpeed;
 				}
@@ -41,16 +41,18 @@ class Player extends Entity{
 						vel.x=0;
 					}
 				}
-
-				anim.SetFloat("Speed", Mathf.Abs(vel.x));
-			
 			}
+
+			anim.SetFloat("Speed", Mathf.Abs(vel.x));
+			
+			
 				
 			
-
-			if(device.Action3.WasPressed || Input.GetKeyDown(KeyCode.Z) ){
-				Attack();
-			}
+			if (controlOn){
+				if(device.Action3.WasPressed || Input.GetKeyDown(KeyCode.Z) ){
+					Attack();
+				}
+			}	
 		}
 
 		

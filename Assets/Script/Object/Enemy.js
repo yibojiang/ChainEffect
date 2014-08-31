@@ -59,8 +59,8 @@ class Enemy extends Entity{
 				if (sightHit){
 					//Debug.Log("player in sight");
 					target=sightHit.collider.gameObject.GetComponent(Entity) as Entity;
-					StopCoroutine("Wander");
-					//StopAllCoroutines();
+					//StopCoroutine("Wander");
+					StopAllCoroutines();
 					stage=1;
 				}
 				else{
@@ -82,8 +82,6 @@ class Enemy extends Entity{
 				if (anim.GetCurrentAnimatorStateInfo(0).nameHash != atakState){
 					if (attackHit){
 							
-						//Debug.Log("ready to attack player");
-						
 						anim.SetTrigger("Attack");
 						vel.x=0;
 					}
