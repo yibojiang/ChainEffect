@@ -25,8 +25,9 @@ class GirlAppearTrigger extends EventTrigger{
 		tDialog.text="Girl: ...";
 		yield WaitForSeconds(1);
 		tDialog.text="";
+		yield WaitForSeconds(1);
 		
-
+		/*
 		var wait:boolean=true;
 		while (wait){
 			var device:InputDevice=InputManager.ActiveDevice;
@@ -35,6 +36,7 @@ class GirlAppearTrigger extends EventTrigger{
 			}
 			yield;
 		}
+		*/
 		
 		girl.anim.Play("Idle");
 		girl.SetDir(1);

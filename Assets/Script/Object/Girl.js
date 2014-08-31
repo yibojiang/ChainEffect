@@ -36,9 +36,7 @@ class Girl extends Entity{
 		var sightHit:RaycastHit2D;
 		sightHit=Physics2D.Linecast(transform.position, sightCheck.position, 1 << LayerMask.NameToLayer("Player"));
 		//Debug.Log(sightHit.collider.gameObject.name);
-		if (!sightHit){
-			Flip();
-		}
+		
 
 		if (stage!=2){
 			if (sightHit){
@@ -49,7 +47,7 @@ class Girl extends Entity{
 			else{
 				
 				if (target!=null ){
-					//
+					Flip();
 					vel.x=0;
 					stage=0;
 					target=null;
