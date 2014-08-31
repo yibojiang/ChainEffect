@@ -4,7 +4,7 @@ class Player extends Entity{
 	var anim:Animator;
 
 	var controlOn:boolean=true;
-	var hurtForce:float=150;
+	
 
 	var hurtState :int= Animator.StringToHash("Base Layer.Hurt");
 	var atkState :int= Animator.StringToHash("Base Layer.Attack");
@@ -79,7 +79,7 @@ class Player extends Entity{
 			}
 			
 
-			rigidbody2D.AddForce(Vector2(-hurtForce*_dir,0) );
+			rigidbody2D.AddForce(Vector2(-hurtForce*_dir,hurtForce/3) );
 			anim.SetTrigger("Hurt");
 		}
 		else{

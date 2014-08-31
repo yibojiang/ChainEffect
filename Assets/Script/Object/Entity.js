@@ -12,6 +12,7 @@ var maxWalkSpeed:float=20;
 var vel:Vector3;
 var HP:float;
 var maxHP:float;
+var hurtForce:float=200;
 
 function SetDir(_dir:int){
 	
