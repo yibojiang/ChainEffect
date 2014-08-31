@@ -4,12 +4,11 @@ class Player extends Entity{
 	var anim:Animator;
 
 	var controlOn:boolean=true;
-	
-
 	var hurtState :int= Animator.StringToHash("Base Layer.Hurt");
 	var atkState :int= Animator.StringToHash("Base Layer.Attack");
 
 
+	var withGirl:boolean;
 
 	function Start(){
 		super.Start();
@@ -43,12 +42,12 @@ class Player extends Entity{
 				}
 			}
 
-			anim.SetFloat("Speed", Mathf.Abs(vel.x));
+			
+			anim.SetFloat("Speed", Mathf.Abs(vel.x));	
+
 			
 			
-				
-			
-			if (controlOn){
+			if (controlOn && !withGirl ){
 				if(device.Action3.WasPressed || Input.GetKeyDown(KeyCode.Z) ){
 					Attack();
 				}
