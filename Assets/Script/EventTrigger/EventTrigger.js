@@ -1,5 +1,5 @@
 ﻿#pragma strict
-var triggerDestroy:boolean;
+var triggerDestroy:boolean=true;
 
 function TriggerEvent():IEnumerator{
 	if (triggerDestroy){

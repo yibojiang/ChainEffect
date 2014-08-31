@@ -12,6 +12,8 @@ class Girl extends Entity{
 
 	var target:Entity;
 
+	var getTrigger:GameObject;
+
 	//var follCheck:Transform;
 	var followDistance:float;
 
@@ -33,22 +35,29 @@ class Girl extends Entity{
 	override function Update(){
 		var sightHit:RaycastHit2D;
 		sightHit=Physics2D.Linecast(transform.position, sightCheck.position, 1 << LayerMask.NameToLayer("Player"));
+		//Debug.Log(sightHit.collider.gameObject.name);
+		if (!sightHit){
+			Flip();
+		}
 
-		if (sightHit){
-			//StopCoroutine("LookAround");
-			StopAllCoroutines();
-			target=sightHit.collider.gameObject.GetComponent(Entity) as Entity;
-			stage=1;
-		}
-		else{
-			
-			if (target!=null){
-				vel.x=0;
-				stage=0;
-				target=null;
-				LookAround();
+		if (stage!=2){
+			if (sightHit){
+				StopAllCoroutines();
+				target=sightHit.collider.gameObject.GetComponent(Entity) as Entity;
+				stage=1;
 			}
+			else{
+				
+				if (target!=null ){
+					//
+					vel.x=0;
+					stage=0;
+					target=null;
+					LookAround();
+				}
+			}	
 		}
+		
 
 		if (stage==0){
 			//look around
@@ -62,6 +71,9 @@ class Girl extends Entity{
 			else{
 				vel.x=0;	
 			}
+		}
+		else if (stage==2){
+			//Fall down
 		}
 
 		anim.SetFloat("Speed", Mathf.Abs(vel.x));

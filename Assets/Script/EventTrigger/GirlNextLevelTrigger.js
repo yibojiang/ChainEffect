@@ -5,25 +5,28 @@ class GirlNextLevelTrigger extends EventTrigger{
 
 		Debug.Log("NextStage");
 
-		CameraController.Instance().PixelTo(2,
-			function(){
-				Debug.Log("in");
-			}, function(){
-				Debug.Log("out"); 
-			});
+		
 
 		super.TriggerEvent();
 
 	}
 
+	function PixelToNextLevel(){
+		CameraController.Instance().PixelTo(1,
+			function(){
+				//Debug.Log("in");
+				GameController.Instance().LoadScene(1);
+			}, function(){
+				//Debug.Log("out"); 
+				//GameController.Instance().LoadScene(1);
+			});
+	}
+
+	/*
 	function Update(){
 		if (Input.GetKeyDown(KeyCode.H)){
-			CameraController.Instance().PixelTo(2,
-			function(){
-				Debug.Log("in");
-			}, function(){
-				Debug.Log("out"); 
-			});			
+			PixelToNextLevel();
 		}
 	}
+	*/
 }

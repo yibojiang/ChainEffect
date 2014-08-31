@@ -31,8 +31,8 @@ function PixelTo(_duration:float,_inFunc:Function,_afterFunc:Function){
 	var lerp:float=0;
 	while (lerp<_duration){
 		lerp+=Time.deltaTime;
-		rp.horizontalResolution=Mathf.Lerp(100,20,lerp/_duration);
-		rp.verticalResolution=Mathf.Lerp(100,20,lerp/_duration);
+		rp.horizontalResolution=Mathf.Lerp(100,10,lerp/_duration);
+		rp.verticalResolution=Mathf.Lerp(100,10,lerp/_duration);
 		yield WaitForEndOfFrame();
 	}
 	_inFunc();
@@ -43,8 +43,8 @@ function PixelOut(_duration:float,_afterFunc:Function){
 	var lerp:float=0;
 	while (lerp<_duration){
 		lerp+=Time.deltaTime;
-		rp.horizontalResolution=Mathf.Lerp(20,100,lerp/_duration);
-		rp.verticalResolution=Mathf.Lerp(20,100,lerp/_duration);
+		rp.horizontalResolution=Mathf.Lerp(10,100,lerp/_duration);
+		rp.verticalResolution=Mathf.Lerp(10,100,lerp/_duration);
 		yield WaitForEndOfFrame();
 	}
 	rp.enabled=false;
