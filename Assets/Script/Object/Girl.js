@@ -81,6 +81,7 @@ class Girl extends Entity{
 
 		super.Update();
 	}
+	
 	function OnTriggerEnter2D(_other:Collider2D){
 		if (_other.CompareTag("EventTrigger")){
 			Debug.Log(_other.name);

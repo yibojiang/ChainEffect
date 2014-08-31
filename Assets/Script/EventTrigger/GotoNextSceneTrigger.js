@@ -1,7 +1,7 @@
 ﻿#pragma strict
-class GoToLevel2Trigger extends EventTrigger{
+class GotoNextSceneTrigger extends EventTrigger{
 
-
+	var sceneIndex:int;
 	override function TriggerEvent():IEnumerator{
 		super.TriggerEvent();
 
@@ -11,7 +11,7 @@ class GoToLevel2Trigger extends EventTrigger{
 		CameraController.Instance().PixelTo(1,
 			function(){
 				//Debug.Log("in");
-				GameController.Instance().LoadScene(2);
+				GameController.Instance().LoadScene(sceneIndex);
 			}, function(){
 				//Debug.Log("out"); 
 				//GameController.Instance().LoadScene(1);
