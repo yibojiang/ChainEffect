@@ -54,21 +54,23 @@ class Enemy extends Entity{
 		if (alive){
 			var sightHit:RaycastHit2D;
 			sightHit=Physics2D.Linecast(transform.position, sightCheck.position, 1 << LayerMask.NameToLayer("Player"));
-			if (sightHit){
-				//Debug.Log("player in sight");
-				target=sightHit.collider.gameObject.GetComponent(Entity) as Entity;
-				StopCoroutine("Wander");
-				//StopAllCoroutines();
-				stage=1;
-			}
-			else{
-				if (target!=null){
-					vel.x=0;
-					stage=0;
-					target=null;
-					Wander();
+
+			if (anim.GetCurrentAnimatorStateInfo(0).nameHash != atakState && anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState){
+				if (sightHit){
+					//Debug.Log("player in sight");
+					target=sightHit.collider.gameObject.GetComponent(Entity) as Entity;
+					StopCoroutine("Wander");
+					//StopAllCoroutines();
+					stage=1;
 				}
-				
+				else{
+					if (target!=null){
+						vel.x=0;
+						stage=0;
+						target=null;
+						Wander();
+					}
+				}
 			}
 
 			if (stage==0){
@@ -130,7 +132,7 @@ class Enemy extends Entity{
 			}
 			
 
-			rigidbody2D.AddForce(Vector2(-hurtForce*_dir,hurtForce/2) );
+			rigidbody2D.AddForce(Vector2(-hurtForce*_dir,hurtForce/3) );
 			anim.SetTrigger("Hurt");
 		}
 		else{

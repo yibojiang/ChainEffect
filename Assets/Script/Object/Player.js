@@ -79,7 +79,7 @@ class Player extends Entity{
 			}
 			
 
-			rigidbody2D.AddForce(Vector2(-hurtForce*_dir,hurtForce/2) );
+			rigidbody2D.AddForce(Vector2(-hurtForce*_dir,hurtForce/3) );
 			anim.SetTrigger("Hurt");
 		}
 		else{
