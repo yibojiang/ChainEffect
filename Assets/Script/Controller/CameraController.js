@@ -16,7 +16,7 @@ private var end:float;
 
 var moveSpeed:float=5;
 var layers:ScrollingLayer[];
-
+var tDialog:TextMesh;
 function Start () {
 
 }
