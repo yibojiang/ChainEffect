@@ -11,6 +11,7 @@ class Enemy extends Entity{
 	var stage:int=0;
 	
 	var atakState :int= Animator.StringToHash("Base Layer.Attack");  
+	var hurtState :int= Animator.StringToHash("Base Layer.Hurt");
 
 	var attackArea:Transform;
 	var attackRange:float=0.05;
@@ -26,21 +27,14 @@ class Enemy extends Entity{
 	function Start(){
 		super.Start();
 		atakState= Animator.StringToHash("Base Layer.Attack"); 
+		hurtState=Animator.StringToHash("Base Layer.Hurt");  
 		Wander();
 	}
 
 	function Wander(){
-		/*
-		flipToggle+=Time.deltaTime;
-		if (flipToggle>=flipInterval){
-			flipToggle-=flipInterval;
-			Flip();
-		}
-		*/
-		
+		Debug.Log("wander");
 		while(stage==0){
-			//Debug.Log("wandering");
-
+			yield WaitForSeconds(2);
 			yield WaitForSeconds(Random.Range(1.0,3.0));
 			anim.Play("Attack2");
 			yield WaitForSeconds(Random.Range(2.0,3.0));
@@ -110,13 +104,47 @@ class Enemy extends Entity{
 
 	}
 
+	function OnTriggerEnter2D(_other:Collider2D){
+		//Debug.Log("OnTriggerEnter");
+		if (_other.CompareTag("PlayerAttack")){
+			if (_other.gameObject.transform.position.x>transform.position.x){
+				Hurt(1);
+			}
+			else{
+				Hurt(-1);	
+			}
+		}
+	}
+
+	function Hurt(_dir:int){
+		
+		if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState && !anim.IsInTransition(0) ){
+			vel.x=0;
+			//Debug.Log(Time.time+": Hurt");
+			
+			if (_dir<0){
+				SetDir(1);
+			}
+			else{
+				SetDir(0);
+			}
+			
+
+			rigidbody2D.AddForce(Vector2(-hurtForce*_dir,hurtForce/2) );
+			anim.SetTrigger("Hurt");
+		}
+		else{
+			//Debug.Log("in state, not hurt");
+		}
+
+
+	}
+
 	function Attack(){
 		var hitCollider:Collider2D = Physics2D.OverlapCircle(attackArea.position, attackRange, 1 << LayerMask.NameToLayer("Player"));
 		if (hitCollider!=null){
 			hitCollider.gameObject.SendMessage("Hurt");	
 		}
-		
-		
 	}
 
 	override function Die(){
