@@ -20,9 +20,7 @@ class Player extends Entity{
 	function Update(){
 		var device:InputDevice=InputManager.ActiveDevice;
 
-		
 
-		
 		if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState 
 			&& anim.GetCurrentAnimatorStateInfo(0).nameHash != atkState 
 			&& !anim.IsInTransition(0) 
