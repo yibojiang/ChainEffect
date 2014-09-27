@@ -42,9 +42,16 @@ function LoadScene(_index:int){
 		playerBoss.SetDir(1);
 	}
 	else if (_index==3){
+		CameraController.Instance().target=player.transform;
+		CameraController.Instance().SetToTarget();
+		player.gameObject.SetActive(true);
+		playerBoss.gameObject.SetActive(false);
+		player.transform.position=scenes[_index].bornTransform.position;
+		player.withGirl=false;
 
-		
+		//AudioController.Instance().audio.clip=null;
 	}
+
 	LoadScene(scenes[_index]);
 }
 
@@ -59,7 +66,7 @@ function LoadScene(_scene:Scene){
 
 
 function Start () {
-	LoadScene(2);
+	LoadScene(3);
 }
 
 function Update () {

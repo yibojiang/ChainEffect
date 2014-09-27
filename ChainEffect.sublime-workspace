@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"_Mai",
+				"_MainTex_ST"
+			],
+			[
+				"sc",
+				"screenpos"
+			],
+			[
+				"main",
+				"mainTex"
+			],
+			[
+				"Ve",
+				"Vector2"
+			],
+			[
+				"random",
+				"randomAngle"
+			],
+			[
+				"Gen",
+				"GenerateLightening"
+			],
+			[
+				"vet",
+				"vetPos"
+			],
+			[
+				"move",
+				"moveInterval"
+			],
+			[
+				"life",
+				"lifeInterval"
+			],
+			[
+				"fi",
+				"fireDieInterval"
+			],
+			[
+				"fIREBA",
+				"Fireball"
+			],
+			[
+				"player",
+				"playerBoss"
+			],
+			[
+				"sig",
+				"sightHit"
+			],
+			[
+				"flip",
+				"flipInterval"
+			],
+			[
 				"cur",
 				"curButton"
 			],
@@ -228,10 +284,6 @@
 				"Vector3	x, y, z"
 			],
 			[
-				"Ve",
-				"Vector3	x, y, z"
-			],
-			[
 				"Weapon",
 				"WeaponManager"
 			],
@@ -290,10 +342,6 @@
 			[
 				"bo",
 				"bonusToggle"
-			],
-			[
-				"life",
-				"lifeTimer"
 			],
 			[
 				"Pla",
@@ -466,64 +514,48 @@
 			[
 				"Genera",
 				"GenerateStarObject"
-			],
-			[
-				"maxH",
-				"maxHurt"
-			],
-			[
-				"gamO",
-				"gameObject"
-			],
-			[
-				"inkO",
-				"inkObj"
-			],
-			[
-				"ink",
-				"inkPrefab"
-			],
-			[
-				"star",
-				"starScoreObj"
-			],
-			[
-				"lifeT",
-				"lifeTimer"
-			],
-			[
-				"item",
-				"itemMode"
-			],
-			[
-				"bonus",
-				"bonusOn"
-			],
-			[
-				"aLERT",
-				"AlertIndicator"
-			],
-			[
-				"bonu",
-				"bonusObj"
-			],
-			[
-				"fi",
-				"FireFinish"
-			],
-			[
-				"en",
-				"enabled"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "Assets/Shader/Water/WaterEffect.shader",
+			"settings":
+			{
+				"buffer_size": 2321,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Shader/HeatDistort/HeatDistort.shader",
+			"settings":
+			{
+				"buffer_size": 3378,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Shader/Water/WaterSpark.shader",
+			"settings":
+			{
+				"buffer_size": 2855,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/yibojiang/Downloads/builtin_shaders-4.5.4/DefaultResourcesExtra/Particle Alpha Blend.shader",
+			"settings":
+			{
+				"buffer_size": 1718,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 347.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -547,7 +579,7 @@
 				"Package Control: Add Channel"
 			]
 		],
-		"width": 467.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -567,138 +599,139 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets"
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Fonts"
 	],
 	"file_history":
 	[
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Retro Pixel/Scripts/RetroPixel.cs",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Game.unity.meta",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Game.unity",
+		"/Users/yibojiang/Documents/GameDevelop/UnityTest/Prototype919/Assets/Game/Shaders/CustomTexture.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Shader/HeatDistort.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/Hero.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/DepthOfField34.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/_DepthOfField/TiltShiftHdrLensBlur.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Water (Pro Only)/Sources/Scripts/Water.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger/WolfAppearTrigger.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Water (Pro Only)/Sources/Shaders/FX-Water.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/GlowCompose.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/GlowConeTap.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/GlowEffectDownsample.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/GlowEffect.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Shader/CustomGlow.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Texture/HeatDistort.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Shader/Water/WaterEffect.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Texture/HeatDistort.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Shader/CustomGlow2.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Controller/CameraController.js",
+		"/Users/yibojiang/Downloads/builtin_shaders-4.5.4/DefaultResourcesExtra/Reflect-Glossy.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Sources/Textures/flameA.tif",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Sources/Textures/flameC.tif",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Editor/InControl Editor/Editor/ProfileListGenerator.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/Unity/DeviceProfiles/LogitechDualActionProfile.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Sources/Materials/FlameA.mat",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Smoke/Fluffy Smoke Large.prefab",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Fireball.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/GrassGenerator.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/LighteningGenerator.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Lightening.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/CustomImageEffects/CustomGlow.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Shader/GradientGlow2.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Sources/Shaders/Toony-BasicOutline.shader",
+		"/Users/yibojiang/Downloads/builtin_shaders-4.5.4/DefaultResources/Sprites-Default.shader",
+		"/Users/yibojiang/Downloads/builtin_shaders-4.5.4/DefaultResources/Font.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Sources/Shaders/Toony-Basic.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Sources/Shaders/Toony-Basic.shader.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/_ToonShadingSample.unity",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Texture.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Toony-Lighted Outline.mat.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Toony-Lighted.mat.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Toony-Basic.mat.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Toony-Lighted Outline.mat",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Toony-BasicOutline.mat.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Toony-Lighted.mat",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Toony-Basic.mat",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Toon Shading/Toony-BasicOutline.mat",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Legacy Particles/TimedObjectDestructor.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/BGM.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/Temp/wolf/boy_lick.png.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/CustomImageEffects/CustomGlow.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/CustomImageEffects.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/cameluStand.png.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/ContrastComposite.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/Components.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Controller.meta",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/GlobalFog.js",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/_BloomAndFlares/BlendOneOne.shader",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/girlLay.png.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Controller/GameController.js",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Water.meta",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Sources/Materials/Water Splash1.mat",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/TwirlEffect.shader",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Water/Water Fountain.prefab",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Database/ConfigHelper.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_CatSlotMachineMenu.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/FrozenGunController.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Manager/WeaponManager.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/Ship.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Mutiplay/MutiplayPlayer.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/XBMenu/DebugObject.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_TitleMenu.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_Title.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_CatDetailMenu.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/XBMenu/MenuState_ShipDetailMenu.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_ResultMenu.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/RichCatPreview.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Prefab/Weapon/RichCat.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/RichCatController.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Localization/Resources/Languages/RU_Item.xml",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/RU_glyphList.txt",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Resources.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/RockBig_Explode.anim",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/CatSlotChina.controller",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/CatTalk_Talk.anim",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/NewTexture/NewCats2/CAT13_attack.anim",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assembly-CSharp.csproj",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Library/ScriptMapper",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/XBMenu/XBProfileManager.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/NewTexture/SlotMachine/CatSlotMchine - EditorInfo.asset",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Plugins/InControl/Libraries/Unity/DeviceProfiles/XboxOneProfile.cs",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Plugins/XBUI/XBButton.cs",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/iTweenEditor/iTweenEvent.cs",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Gizmos/iTweenIcon.tif",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Editor/Tools.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/XcodePlugins/Info.plist",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Localization/Resources/Languages/DE_Enemy.xml",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/DE_glyphList.txt",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Mutiplay/MutiplayManager.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/cloud/main.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Manager/MissionManager.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/ItemSkill/ItemSkill.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Manager/GameManager.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Manager/ScoreManager.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/storyboom_cut7.anim",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/AndroidPackage/Gen_Signature_Android.apk",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Library/guidmapper",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/MissionClear.anim",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/Missle.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/MissileCat_Idle.anim",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Plugins/XBUI/XBCatButton.cs",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/XBOneTest.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Menu/CatsMenu/CatDetailMenu.js.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Menu/CatsMenu/CatDetailMenu.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/HPbar.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/FromPeter/Images/hp_bg.png.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/NewTexture/InGameUI/HPBar1P.asset",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Plugins/HTTP.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/PT_glyphList.txt",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/FrozenExplosion.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Standard Assets/Glass Refraction (Pro Only)/FX-Refractive.mat",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/FR_glyphList.txt",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Plugins/PlayHaven/docs-api.zip.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/DamageExplosion.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Prefab/Destroy/Rock_DamagePart10.prefab",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Database/Database.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/AndroidPlugins/ChinaMobile/Android/res/drawable/umeng_update_title_bg.xml",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/XboxOneManagedImport/UsersImport.dll.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/FunnelController.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/iTweenEditor.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Prefab/ItemSkill/MsgSkill.prefab",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Menu/ShipMenu/ShipDetailPanel.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Menu/ShipMenu/ShipDetailPanel.js.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/SkullHeart_MouthClose.anim",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/FromPeter/Prefab/MutiplayManager.prefab",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/Enemy.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/DragonBallController.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/DragonBall.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/BarrageLauncherController.js",
-		"/Users/yibojiang/Desktop/CatDPSConfig.csv",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/FireGunController.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/Fire.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/QigongBall.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/QigongExplosion.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/Barrage.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/Positron.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/LaserGunController.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Plugins/InControl/Examples/Multiplayer.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Plugins/InControl/Examples/Multiplayer/Multiplayer.unity",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/RobotController.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Prefab/ItemSkill.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Prefab/Items.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/iTweenEditor/Helper Classes/EventParamMappings.cs",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/iTweenEditor/Editor/iTweenPathEditor.cs.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/iTweenEditor/Editor/iTweenEventDataEditor.cs.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/iTweenEditor/iTweenEvent.cs.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/EN_glyphList.txt",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/XBPrefab/XBMenu/ResultMenuController.prefab.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Menu/ResultMenu/ResultMenu.js.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/XBPrefab/XBMenu/ResultMenuController.prefab",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Menu/ResultMenu/ResultMenu.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Menu/ResultMenu.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/RichCatGuardAnimation.js.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Controller/RichCatGuardAnimation.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Editor/InControl/Editor/ReorderableList/IReorderableListAdaptor.cs",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Tools/Circle.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/CatTalk_Idle.anim",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Prefab/Weapon.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/AndroidPlugins/Alter360/Android/assets/feeInfo.dat",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Configuration.unity",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/FromPeter/Images/CAT15_odin_1.png.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Prefab/Weapon/CatPreview/FireGun.prefab",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/NewTexture/NewCats/Animation/FireSpark.asset",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Audio/Sound/fireCloud.wav.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Prefab/Weapon/CatPreview/LaserGun.prefab",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Audio/Sound/laser.wav",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Library/AssetServerCacheV3",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Plugins/Apsalar/libApsalar.a.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Loading.unity",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Skill/SkullheartController.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/SkullHeart_MouthOpen.anim.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/SkullHeart_MouthClose.anim.meta",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Animation/SkullHeart_MouthOpen.anim"
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Editor/Water (Pro Only)/Water4.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Editor/Water (Pro Only)/Water4/WaterEditorUtility.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Water (Pro Only)/Water4/Water4Example (Advanced).prefab",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Shader/GlowShader.shader",
+		"/Users/yibojiang/Documents/GameDevelop/UnityTest/Prototype919/Assets/Standard Assets/Water (Pro Only)/Sources/Scripts/Water.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Prefab/Object/Lightening.prefab",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Sources/Animations/Light explosion.anim.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Sources/Animations/Light explosion.anim",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Prefab/Object/Grass.prefab",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Textures/grayscale ramp.png.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Animation.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Player.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Enemy.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Villager.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Controller/AudioController.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Controller/AudioController.js.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/PlayerBoss.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Scene.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger/GirlFallTrigger.js",
+		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Plugins/XBOneXR/ControllerXR.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Girl.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger/GirlAppearTrigger.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/PlayerBossAnimation.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Animation/Villager.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/VersionInfo.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/XInput/XInputDotNetPure/GamePad.cs.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Controller/GameController.js.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Game.unity.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Prefab/Weapon/Fireball.prefab",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/fireball.png.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Fire.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Fonts.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Retro Pixel/Scripts/RetroPixel.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger/EventTrigger.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Entity.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Editor/InControl Editor.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/Unity/DeviceProfiles/Playstation4MacUSBProfile.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/Unity/DeviceProfiles/Playstation4MacUSBProfile.cs.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Animation/Player/PlayerBody.controller",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger/NextLevelTrigger.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger/GirlGetTrigger.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger/GoToLevel2Trigger.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Controller/PlayerController.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger/GirlNextLevelTrigger.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Prefab/Trigger/GirlGetTrigger.prefab",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/Temp/girl.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Animation/Girl/girlStand.controller",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/girlSit.png.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/girlStand.png.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/girlWalk.png.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Girl.js.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/ScrollingLayer.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Examples/InterfaceMovement/ButtonManager.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/CameraMotionBlur.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/NoiseEffect.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Transition.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Retro Pixel.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/Control/TwoAxisInputControl.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/Device/InputDevice.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Animation/Girl.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/SrollingObj.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/InputController.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Animation/EnemyAnimationEvent.js",
+		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/Entity.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/ScreenOverlay.js"
 	],
 	"find":
 	{
@@ -718,6 +751,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"_GrabTexture",
+			"Glow",
+			"compositeMaterial",
+			"downsampleMaterial",
+			"m_DownsampleMaterial",
+			"m_ReflectLayers",
+			"layer",
+			"m_ReflectionTexture",
+			"downsampleShader",
+			"camera",
+			"compositeShader",
+			"compositeMaterial",
+			"width",
+			"attackArea",
+			"bodyParts",
+			"getcom",
+			"LeftStickX",
+			"LeftStick",
+			"TwoAxisInputControl",
+			"LeftStickX",
+			"TwoAxisInputControl",
 			"oldNumColors",
 			"numColors",
 			"color2",
@@ -824,28 +878,7 @@
 			"CheckCatShipProgress",
 			"GameData",
 			"AddLevel",
-			"levelup",
-			"SaveOption",
-			"buff",
-			"load",
-			"SaveOption",
-			"saveoption",
-			"SaveOption",
-			"tlevel",
-			"ResetLayers",
-			"m_CameraTarget",
-			"targetEquipSlot",
-			"index",
-			"LightenningToTarget",
-			"reset",
-			"black",
-			"performy",
-			"inputDevice",
-			"wait",
-			"gameresume",
-			"gamepause",
-			"wait",
-			"reset"
+			"levelup"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -882,8 +915,125 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Assets/Shader/Water/WaterEffect.shader",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2102,
+								2206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 110.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/Shader/HeatDistort/HeatDistort.shader",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								389,
+								383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/Shader/Water/WaterSpark.shader",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2855,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2271,
+								2271
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/yibojiang/Downloads/builtin_shaders-4.5.4/DefaultResourcesExtra/Particle Alpha Blend.shader",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								308,
+								411
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -925,7 +1075,7 @@
 	"project": "ChainEffect.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -933,6 +1083,290 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"heat",
+				"Shader/HeatDistort/HeatDistort.shader"
+			],
+			[
+				"heatd",
+				"Shader/HeatDistort.meta"
+			],
+			[
+				"wateref",
+				"Shader/Water/WaterEffect.shader"
+			],
+			[
+				"customglow",
+				"Shader/CustomGlow2.shader"
+			],
+			[
+				"customgl",
+				"Shader/CustomGlow.shader"
+			],
+			[
+				"gloweff",
+				"Standard Assets/Image Effects (Pro Only)/GlowEffect.cs"
+			],
+			[
+				"water.sha",
+				"Standard Assets/Water (Pro Only)/Sources/Shaders/FX-Water.shader"
+			],
+			[
+				"toonshaderoutline.s",
+				"Standard Assets/Toon Shading/Sources/Shaders/Toony-BasicOutline.shader"
+			],
+			[
+				"custom",
+				"Shader/CustomGlow.shader"
+			],
+			[
+				"glow",
+				"Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/GlowEffectDownsample.shader"
+			],
+			[
+				"too",
+				"Standard Assets/Toon Shading/Sources/Shaders/Toony-BasicOutline.shader"
+			],
+			[
+				"gradientglow2",
+				"Shader/GradientGlow2.shader"
+			],
+			[
+				"water",
+				"Standard Assets/Water (Pro Only)/Sources/Scripts/Water.cs"
+			],
+			[
+				"custo",
+				"Script/CustomImageEffects/CustomGlow.cs"
+			],
+			[
+				"glowcom",
+				"Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/GlowCompose.shader"
+			],
+			[
+				"glo",
+				"Standard Assets/Image Effects (Pro Only)/GlowEffect.cs"
+			],
+			[
+				"water.cs",
+				"Standard Assets/Water (Pro Only)/Sources/Scripts/Water.cs"
+			],
+			[
+				"glowsh",
+				"Shader/GlowShader.shader"
+			],
+			[
+				"ligte",
+				"Script/Object/Lightening.js"
+			],
+			[
+				"lig",
+				"Script/Object/Lightening.js"
+			],
+			[
+				"grassge",
+				"Script/Object/GrassGenerator.js"
+			],
+			[
+				"player",
+				"Script/Object/Player.js"
+			],
+			[
+				"camerac",
+				"Script/Controller/CameraController.js"
+			],
+			[
+				"audioc",
+				"Script/Controller/AudioController.js"
+			],
+			[
+				"game",
+				"Script/Controller/GameController.js"
+			],
+			[
+				"gamecon",
+				"Script/Controller/GameController.js"
+			],
+			[
+				"gamec",
+				"Script/Controller/GameController.js"
+			],
+			[
+				"girlapp",
+				"Script/EventTrigger/GirlAppearTrigger.js"
+			],
+			[
+				"girl",
+				"Script/Object/Girl.js"
+			],
+			[
+				"gameco",
+				"Script/Controller/GameController.js"
+			],
+			[
+				"vill",
+				"Script/Object/Villager.js"
+			],
+			[
+				"fireball",
+				"Script/Object/Fireball.js"
+			],
+			[
+				"entity",
+				"Script/Object/Entity.js"
+			],
+			[
+				"came",
+				"Script/Controller/CameraController.js"
+			],
+			[
+				"entit",
+				"Script/Object/Entity.js"
+			],
+			[
+				"playerboss",
+				"Script/Object/PlayerBoss.js"
+			],
+			[
+				"girlgettr",
+				"Script/EventTrigger/GirlGetTrigger.js"
+			],
+			[
+				"girlfa",
+				"Script/EventTrigger/GirlFallTrigger.js"
+			],
+			[
+				"scene",
+				"Script/Object/Scene.js"
+			],
+			[
+				"eventtr",
+				"Script/EventTrigger/EventTrigger.js"
+			],
+			[
+				"nextle",
+				"Script/EventTrigger/NextLevelTrigger.js"
+			],
+			[
+				"girlfall",
+				"Script/EventTrigger/GirlFallTrigger.js"
+			],
+			[
+				"rp",
+				"Retro Pixel/Scripts/RetroPixel.cs"
+			],
+			[
+				"tra",
+				"Script/Object/Transition.cs"
+			],
+			[
+				"scen",
+				"Script/Object/Scene.js"
+			],
+			[
+				"girl.js",
+				"Script/Object/Girl.js"
+			],
+			[
+				"playerc",
+				"Script/Controller/PlayerController.js"
+			],
+			[
+				"wolf",
+				"Script/EventTrigger/WolfAppearTrigger.js"
+			],
+			[
+				"enemy",
+				"Script/Object/Enemy.js"
+			],
+			[
+				"camer",
+				"Script/Controller/CameraController.js"
+			],
+			[
+				"scr",
+				"Script/Object/ScrollingLayer.js"
+			],
+			[
+				"camera",
+				"Script/Controller/CameraController.js"
+			],
+			[
+				"scrollingob",
+				"Script/Object/SrollingObj.js"
+			],
+			[
+				"en",
+				"Script/Object/Entity.js"
+			],
+			[
+				"scrollinglayer",
+				"Script/Object/ScrollingLayer.js"
+			],
+			[
+				"enemyan",
+				"Script/Animation/EnemyAnimationEvent.js"
+			],
+			[
+				"animationev",
+				"Script/Animation/AnimationEvent.js"
+			],
+			[
+				"eventt",
+				"Script/EventTrigger/EventTrigger.js"
+			],
+			[
+				"wolfapp",
+				"Script/EventTrigger/WolfAppearTrigger.js"
+			],
+			[
+				"eventtrigger",
+				"Script/EventTrigger/EventTrigger.js"
+			],
+			[
+				"event",
+				"Script/EventTrigger.meta"
+			],
+			[
+				"audio",
+				"Script/Controller/AudioController.js"
+			],
+			[
+				"inputc",
+				"Script/Controller/InputController.js"
+			],
+			[
+				"twoaxisinputcontrol",
+				"Plugins/InControl Plugin/Library/Control/TwoAxisInputControl.cs"
+			],
+			[
+				"inputde",
+				"Plugins/InControl Plugin/Library/Device/InputDevice.cs"
+			],
+			[
+				"inputma",
+				"Plugins/InControl Plugin/Library/InputManager.cs"
+			],
+			[
+				"enti",
+				"Script/Object/Entity.js"
+			],
+			[
+				"inputdevice",
+				"Plugins/InControl Plugin/Library/Device/InputDevice.cs"
+			],
+			[
+				"input",
+				"Script/InputController.js"
+			],
+			[
+				"inputmanager",
+				"Script/InputManager.js"
+			],
+			[
+				"char",
+				"Script/CharacterController.cs"
+			],
 			[
 				"richcatpre",
 				"Assets/Game/Scripts/Controller/RichCatPreview.js"
@@ -1062,10 +1496,6 @@
 				"Assets/Game/Scripts/ItemSkill/ItemSkill.js"
 			],
 			[
-				"enemy",
-				"Assets/Game/Scripts/Object/Enemy.js"
-			],
-			[
 				"resultmenu",
 				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_ResultMenu.js"
 			],
@@ -1164,297 +1594,21 @@
 			[
 				"funne",
 				"Assets/Game/Scripts/Controller/FunnelController.js"
-			],
-			[
-				"robot",
-				"Assets/Game/Scripts/Controller/RobotController.js"
-			],
-			[
-				"beam.js",
-				"Assets/Game/Scripts/Object/Beam.js"
-			],
-			[
-				"cated",
-				"Assets/Game/Scripts/Editor/CatEditor.js"
-			],
-			[
-				"frozenshe",
-				"Assets/Game/Scripts/Object/FrozenShell.js"
-			],
-			[
-				"dragonballcon",
-				"Assets/Game/Scripts/Controller/DragonBallController.js"
-			],
-			[
-				"coinsbu",
-				"Assets/Game/Scripts/Object/CoinsBullet.js"
-			],
-			[
-				"mutiplayman",
-				"Assets/Game/Scripts/Mutiplay/MutiplayManager.js"
-			],
-			[
-				"shipdetail",
-				"Assets/Game/Scripts/XBMenu/MenuState_ShipDetailMenu.js"
-			],
-			[
-				"froznegunc",
-				"Assets/Game/Scripts/Controller/FrozenGunController.js"
-			],
-			[
-				"firecon",
-				"Assets/Game/Scripts/Controller/FireGunController.js"
-			],
-			[
-				"entity",
-				"Assets/Game/Scripts/Object/Entity.js"
-			],
-			[
-				"machinegunc",
-				"Assets/Game/Scripts/Controller/MachineGunController.js"
-			],
-			[
-				"dragonballc",
-				"Assets/Game/Scripts/Controller/DragonBallController.js"
-			],
-			[
-				"frozengun",
-				"Assets/Game/Scripts/Controller/FrozenGunController.js"
-			],
-			[
-				"catdetai",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_CatDetailMenu.js"
-			],
-			[
-				"xbpr",
-				"Assets/Game/Scripts/XBMenu/XBProfileManager.js"
-			],
-			[
-				"pauseme",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_PauseMenu.js"
-			],
-			[
-				"prozengunc",
-				"Assets/Game/Scripts/Controller/FrozenGunController.js"
-			],
-			[
-				"xbplay",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/XBPlayerInfoPanel.js"
-			],
-			[
-				"profi",
-				"Assets/Game/Scripts/Manager/ProfileManager.js"
-			],
-			[
-				"profile",
-				"Assets/Game/Scripts/Manager/ProfileManager.js"
-			],
-			[
-				"xbpro",
-				"Assets/Game/Scripts/XBMenu/XBProfileManager.js"
-			],
-			[
-				"pausemenu",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_PauseMenu.js"
-			],
-			[
-				"game",
-				"Assets/Game/Scripts/Manager/GameManager.js"
-			],
-			[
-				"debugo",
-				"Assets/Game/Scripts/XBMenu/DebugObject.js"
-			],
-			[
-				"configh",
-				"Assets/Game/Scripts/Database/ConfigHelper.js"
-			],
-			[
-				"menustate_t",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_Title.js"
-			],
-			[
-				"profil",
-				"Assets/Game/Scripts/Manager/ProfileManager.js"
-			],
-			[
-				"menutitl",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_Title.js"
-			],
-			[
-				"titlem",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_TitleMenu.js"
-			],
-			[
-				"menustate",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState.js"
-			],
-			[
-				"gamesta",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/GameState.js"
-			],
-			[
-				"readymenu",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_ReadyMenu.js"
-			],
-			[
-				"gamestate",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/GameState.js"
-			],
-			[
-				"xbmission",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/XBMissionInfoPanel.js"
-			],
-			[
-				"xbcameracontrol",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/XBCameraControl.js"
-			],
-			[
-				"gameman",
-				"Assets/Game/Scripts/Manager/GameManager.js"
-			],
-			[
-				"menustatema",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuStateManager.js"
-			],
-			[
-				"cofigh",
-				"Assets/Game/Scripts/Database/ConfigHelper.js"
-			],
-			[
-				"loading",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_Loading.js"
-			],
-			[
-				"gamem",
-				"Assets/Game/Scripts/Manager/GameManager.js"
-			],
-			[
-				"option",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_OptionMenu.js"
-			],
-			[
-				"storemenu",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_StoreMenu.js"
-			],
-			[
-				"optionmenu",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_OptionMenu.js"
-			],
-			[
-				"extra",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_ExtraMenu.js"
-			],
-			[
-				"menustatem",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuStateManager.js"
-			],
-			[
-				"xbtut",
-				"Assets/Game/Scripts/NewTutorial/XBTutorialManager.js"
-			],
-			[
-				"profie",
-				"Assets/Game/Prefab/UI/PropertyField.prefab"
-			],
-			[
-				"gameda",
-				"Assets/Game/FromPeter/Images/medal.png.meta"
-			],
-			[
-				"catmachinemenu",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_CatSlotMachineMenu.js"
-			],
-			[
-				"contrlohelp",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/MenuState_ControlHelp.js"
-			],
-			[
-				"fishbo",
-				"Assets/Game/Scripts/Skill/FishBomb.js"
-			],
-			[
-				"bonuss",
-				"Assets/Game/Scripts/Enemy/EnemyBonusShip.js"
-			],
-			[
-				"enemy.js",
-				"Assets/Game/Scripts/Object/Enemy.js"
-			],
-			[
-				"enemymg",
-				"Assets/Game/Scripts/OldEnemy/EnemyMG.js"
-			],
-			[
-				"bubblec",
-				"Assets/Game/Scripts/Skill/BubbleGunController.js"
-			],
-			[
-				"bubbleb",
-				"Assets/Game/Scripts/Object/BubbleBall.js"
-			],
-			[
-				"frozensh",
-				"Assets/Game/Scripts/Object/FrozenShell.js"
-			],
-			[
-				"frozeng",
-				"Assets/Game/Scripts/Controller/FrozenGunController.js"
-			],
-			[
-				"bullet",
-				"Assets/Game/Scripts/Object/Bullet.js"
-			],
-			[
-				"missle",
-				"Assets/Game/Scripts/Object/Missle.js"
-			],
-			[
-				"funnel",
-				"Assets/Game/Scripts/Controller/FunnelController.js"
-			],
-			[
-				"fang",
-				"Assets/Game/Scripts/Object/Fang.js"
-			],
-			[
-				"fishbombl",
-				"Assets/Game/Scripts/Skill/FishBombController.js"
-			],
-			[
-				"enemyman",
-				"Assets/Game/Scripts/Manager/EnemyManager.js"
-			],
-			[
-				"panda",
-				"Assets/Game/Scripts/Controller/PandaController.js"
-			],
-			[
-				"misslelaunc",
-				"Assets/Game/Scripts/Controller/MissleLauncherController.js"
-			],
-			[
-				"machinegun",
-				"Assets/Game/Scripts/Controller/MachineGunController.js"
-			],
-			[
-				"xbtu",
-				"Assets/Game/Scripts/NewTutorial/XBTutorialManager.js"
-			],
-			[
-				"xbuibutton",
-				"Assets/Game/FromPeter/Scripts/XboxControllerManager/XBUIButton.js"
 			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"~/Documents/GameDevelop/UnityTest/Prototype919/prototype919.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
@@ -1469,10 +1623,10 @@
 	{
 	},
 	"show_minimap": true,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": false,
-	"side_bar_width": 266.0,
+	"side_bar_width": 206.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

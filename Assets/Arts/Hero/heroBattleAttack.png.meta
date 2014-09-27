@@ -50,7 +50,7 @@ TextureImporter:
         width: 19
         height: 29
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: heroBattleAttack_1
       rect:
@@ -59,8 +59,8 @@ TextureImporter:
         y: 0
         width: 27
         height: 30
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .207060352, y: -.00732366182}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: heroBattleAttack_2
       rect:
@@ -69,8 +69,8 @@ TextureImporter:
         y: 0
         width: 26
         height: 20
-      alignment: 7
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .200018659, y: -.016478112}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

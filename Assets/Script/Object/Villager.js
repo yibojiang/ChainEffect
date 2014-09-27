@@ -14,6 +14,9 @@ class Villager extends Entity{
 	var hurtState :int= Animator.StringToHash("Base Layer.Hurt");
 
 	var fired:boolean;
+
+	var fireDieToggle:float;
+	var fireDieInterval:float=2;
 	function SetTarget(_ent:Player){
 		target=_ent;
 	}
@@ -53,6 +56,10 @@ class Villager extends Entity{
 			var sightHit:RaycastHit2D;
 			
 			if (fired){
+				fireDieToggle+=Time.deltaTime;
+				if (fireDieToggle>fireDieInterval){
+					Destroy(this.gameObject);
+				}
 				super.Update();
 				return;
 			}
