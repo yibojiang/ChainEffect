@@ -31,7 +31,7 @@ class Enemy extends Entity{
 	}
 
 	function Wander(){
-		Debug.Log("wander");
+		//Debug.Log("wander");
 		while(stage==0){
 			yield WaitForSeconds(2);
 			yield WaitForSeconds(Random.Range(1.0,3.0));
@@ -129,7 +129,7 @@ class Enemy extends Entity{
 			}
 			
 
-			rigidbody2D.AddForce(Vector2(-hurtForce*_dir,hurtForce/3) );
+			//rigidbody2D.AddForce(Vector2(-hurtForce*_dir,hurtForce/3) );
 			anim.SetTrigger("Hurt");
 		}
 		else{

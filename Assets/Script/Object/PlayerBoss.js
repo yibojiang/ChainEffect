@@ -58,4 +58,16 @@ class PlayerBoss extends Entity{
 
 	}
 
+	function OnTriggerEnter2D(_other:Collider2D){
+		//Debug.Log("OnTriggerEnter");
+		if (_other.CompareTag("EventTrigger")){
+			Debug.Log(_other.name);
+			var e:EventTrigger=_other.GetComponent(EventTrigger) as EventTrigger;
+			e.TriggerEvent();
+
+		}
+
+		
+	}
+
 }

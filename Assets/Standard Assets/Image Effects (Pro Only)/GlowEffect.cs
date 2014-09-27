@@ -128,6 +128,7 @@ public class GlowEffect : MonoBehaviour
 	public void FourTapCone (RenderTexture source, RenderTexture dest, int iteration)
 	{
 		float off = 0.5f + iteration*blurSpread;
+		
 		Graphics.BlitMultiTap (source, dest, blurMaterial,
             new Vector2( off, off),
 			new Vector2(-off, off),
@@ -146,6 +147,7 @@ public class GlowEffect : MonoBehaviour
 	// Called by the camera to apply the image effect
 	void OnRenderImage (RenderTexture source, RenderTexture destination)
 	{
+		//Debug.Log("OnRenderImage");
 		// Clamp parameters to sane values
 		glowIntensity = Mathf.Clamp( glowIntensity, 0.0f, 10.0f );
 		blurIterations = Mathf.Clamp( blurIterations, 0, 30 );

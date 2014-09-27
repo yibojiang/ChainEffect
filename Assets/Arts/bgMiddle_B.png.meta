@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: 9e06d9874fe0bc249a95c6dead7ea199
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: bgMiddle_B
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,10 +25,10 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

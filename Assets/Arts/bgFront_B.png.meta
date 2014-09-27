@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: e68994ede1d9b4a4cb4c0a7917c85614
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: bgFront_B
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,10 +25,10 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

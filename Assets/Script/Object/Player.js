@@ -4,23 +4,27 @@ class Player extends Entity{
 	var anim:Animator;
 
 	var controlOn:boolean=true;
-	var hurtState :int= Animator.StringToHash("Base Layer.Hurt");
-	var atkState :int= Animator.StringToHash("Base Layer.Attack");
-
+	private var hurtState :int= Animator.StringToHash("Base Layer.Hurt");
+	private var atkState :int= Animator.StringToHash("Base Layer.Attack");
+	private var walkState:int=Animator.StringToHash("Base Layer.Walk");
+	private var runState:int=Animator.StringToHash("Base Layer.Run");
+	private var idleState:int=Animator.StringToHash("Base Layer.Idle");
+	private var readyAttackState:int=Animator.StringToHash("Base Layer.ReadyAttack");
 
 	var withGirl:boolean;
 
 	function Start(){
 		super.Start();
-		hurtState=Animator.StringToHash("Base Layer.Hurt");  
-		atkState= Animator.StringToHash("Base Layer.Attack");
+		//hurtState=Animator.StringToHash("Base Layer.Hurt");  
+		//atkState= Animator.StringToHash("Base Layer.Attack");
 	}
 
 	function Update(){
 		var device:InputDevice=InputManager.ActiveDevice;
-		if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState 
-			&& anim.GetCurrentAnimatorStateInfo(0).nameHash != atkState 
-			&& !anim.IsInTransition(0) 
+		if (anim.GetCurrentAnimatorStateInfo(0).nameHash == walkState 
+			|| anim.GetCurrentAnimatorStateInfo(0).nameHash == runState 
+			|| anim.GetCurrentAnimatorStateInfo(0).nameHash == idleState 
+			|| anim.GetCurrentAnimatorStateInfo(0).nameHash == readyAttackState 
 			){
 
 			if (controlOn){
@@ -46,10 +50,18 @@ class Player extends Entity{
 			
 			
 			if (controlOn && !withGirl ){
-				if(device.Action3.WasPressed || Input.GetKeyDown(KeyCode.Z) ){
+				if(device.Action4.WasPressed || Input.GetKeyDown(KeyCode.Z) ){
 					Attack();
 				}
 			}	
+		}
+
+		if (Input.GetKeyDown(KeyCode.D)){
+			anim.SetTrigger("Die");
+		}
+
+		if (Input.GetKeyDown(KeyCode.H)){
+			Hurt();
 		}
 
 		
@@ -64,21 +76,24 @@ class Player extends Entity{
 		anim.SetTrigger("Attack");
 	}
 
-	function Hurt(_dir:int){
+	function Hurt(){
 		
-		if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState && !anim.IsInTransition(0) ){
-			vel.x=0;
+		if (anim.GetCurrentAnimatorStateInfo(0).nameHash != hurtState){
+			//Debug.Log("Hurt");
+			//vel.x=0;
 			//Debug.Log(Time.time+": Hurt");
 			
+			/*
 			if (_dir<0){
 				SetDir(1);
 			}
 			else{
 				SetDir(0);
 			}
+			*/
 			
 
-			rigidbody2D.AddForce(Vector2(-hurtForce*_dir,hurtForce/3) );
+			//rigidbody2D.AddForce(Vector2(-hurtForce,hurtForce/3) );
 			anim.SetTrigger("Hurt");
 		}
 		else{
@@ -99,11 +114,12 @@ class Player extends Entity{
 		}
 
 		if (_other.CompareTag("Hurt")){
+			//Debug.Log("hit");
 			if (_other.gameObject.transform.position.x>transform.position.x){
-				Hurt(1);
+				Hurt();
 			}
 			else{
-				Hurt(-1);	
+				Hurt();	
 			}
 			
 		}
