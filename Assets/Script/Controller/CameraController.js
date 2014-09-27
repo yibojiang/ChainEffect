@@ -60,11 +60,13 @@ function SetLayers(_scene:Scene){
 	layers=_scene.gameObject.GetComponentsInChildren.<ScrollingLayer>(true);
 }
 
+function SetToTarget(){
+
+}
+
 function LateUpdate () {
 	if (target!=null){
 		var ent:Entity=target.GetComponent(Entity) as Entity;
-		//transform.position.x+=(target.position.x+4*ent.GetFlipDir()-transform.position.x)*Time.deltaTime*moveSpeed;
-
 		var targetOffset:float=2*ent.GetFlipDir();
 		var targetPos:float=target.transform.position.x+targetOffset;
 		var xOffset:float=(targetPos-transform.position.x)*moveSpeed;
@@ -74,10 +76,10 @@ function LateUpdate () {
 			var i:int;
 			for (i=0;i<layers.Length;i++){
 				layers[i].transform.position.x+=xOffset*(1-layers[i].speedFactor)*Time.deltaTime;
-				//layers[i].transform.position.x=Mathf.Clamp(transform.position.x,start,end);
+				
 			}	
 		}
 		
 	}
-	//transform.position.x=Mathf.Clamp(transform.position.x,start,end);
+	
 }

@@ -25,8 +25,6 @@ class GirlFallTrigger extends EventTrigger{
 
 		girl.anim.Play("Fall");
 
-		
-
 		yield WaitForSeconds(1.0);
 		player.controlOn=true;
 		super.TriggerEvent();

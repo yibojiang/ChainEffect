@@ -1,8 +1,13 @@
 ﻿#pragma strict
-class GoToLevel2Trigger extends EventTrigger{
+class GirlNextSceneTrigger extends EventTrigger{
 
-
+	var sceneIndex:int;
 	override function TriggerEvent():IEnumerator{
+
+		Debug.Log("NextStage");
+
+		PixelToNextLevel();
+
 		super.TriggerEvent();
 
 	}
@@ -11,10 +16,18 @@ class GoToLevel2Trigger extends EventTrigger{
 		CameraController.Instance().PixelTo(1,
 			function(){
 				//Debug.Log("in");
-				GameController.Instance().LoadScene(2);
+				GameController.Instance().LoadScene(sceneIndex);
 			}, function(){
 				//Debug.Log("out"); 
 				//GameController.Instance().LoadScene(1);
 			});
 	}
+
+	/*
+	function Update(){
+		if (Input.GetKeyDown(KeyCode.H)){
+			PixelToNextLevel();
+		}
+	}
+	*/
 }

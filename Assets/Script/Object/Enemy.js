@@ -13,8 +13,7 @@ class Enemy extends Entity{
 	var atakState :int= Animator.StringToHash("Base Layer.Attack");  
 	var hurtState :int= Animator.StringToHash("Base Layer.Hurt");
 
-	var attackArea:Transform;
-	var attackRange:float=0.05;
+	
 
 	function SetTarget(_ent:Player){
 		target=_ent;
@@ -140,12 +139,7 @@ class Enemy extends Entity{
 
 	}
 
-	function Attack(){
-		var hitCollider:Collider2D = Physics2D.OverlapCircle(attackArea.position, attackRange, 1 << LayerMask.NameToLayer("Player"));
-		if (hitCollider!=null){
-			hitCollider.gameObject.SendMessage("Hurt");	
-		}
-	}
+	
 
 	override function Die(){
 
