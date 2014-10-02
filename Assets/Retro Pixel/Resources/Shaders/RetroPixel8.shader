@@ -103,7 +103,7 @@
 					dist = dist7;
 					col = _Color7;
 				}
-				col=tex2D (_MainTex, i.uv);
+				//col=tex2D (_MainTex, i.uv);
 
 				return col;
 	  		}

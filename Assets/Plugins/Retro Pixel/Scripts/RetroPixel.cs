@@ -13,6 +13,10 @@ namespace AlpacaSound
 		public int horizontalResolution = 160;
 		public int verticalResolution = 200;
 
+
+		public bool colorFilter;
+		public FilterMode filterMode=FilterMode.Point;
+
 		public int numColors = MAX_NUM_COLORS;
 		int oldNumColors = 0;
 
@@ -28,15 +32,19 @@ namespace AlpacaSound
 		Shader[] shaders = new Shader[MAX_NUM_COLORS];
 
 		Material m_material;
+		Material m_material2;
+
+
 		Material material
 		{
 			get
 			{
 				if (m_material == null)
 				{
+					string shaderName ;
 					for (int i = 1; i < MAX_NUM_COLORS; ++i)
 					{
-						string shaderName = "AlpacaSound/RetroPixel" + (i+1);
+						shaderName = "AlpacaSound/RetroPixel" + (i+1);
 						Shader shader = Shader.Find (shaderName);
 
 						if (shader == null)
@@ -50,9 +58,23 @@ namespace AlpacaSound
 					}
 					
 					m_material = new Material (shaders[1]);
-					m_material.hideFlags = HideFlags.DontSave;
+					m_material.hideFlags = HideFlags.DontSave;	
+
+					shaderName="AlpacaSound/RetroPixelCustom";
+					Shader customShader=Shader.Find (shaderName);
+					m_material2 = new Material (customShader);
+					m_material2.hideFlags = HideFlags.DontSave;	
+
 				}
-				return m_material;
+
+				if (colorFilter){
+					return m_material;
+				}
+				else{
+					//Debug.Log("not filter color");
+					return m_material2;
+				}
+				//return m_material;
 			} 
 		}
 
@@ -67,29 +89,34 @@ namespace AlpacaSound
 		
 		public void OnRenderImage (RenderTexture src, RenderTexture dest)
 		{
+			//Debug.Log(this.gameObject.name);
 			horizontalResolution = Mathf.Clamp(horizontalResolution, 1, 2048);
 			verticalResolution = Mathf.Clamp(verticalResolution, 1, 2048);
 			numColors = Mathf.Clamp(numColors, 2, 8);
 
 			if (material)
 			{
-				if (oldNumColors != numColors)
-				{
-					material.shader = shaders[numColors-1];
+				if (colorFilter){
+					//Debug.Log(colorFilter);
+					if (oldNumColors != numColors)
+					{
+						material.shader = shaders[numColors-1];
+					}
+					
+					material.SetColor ("_Color0", color0);
+					material.SetColor ("_Color1", color1);
+					
+					if (numColors > 2) material.SetColor ("_Color2", color2);
+					if (numColors > 3) material.SetColor ("_Color3", color3);
+					if (numColors > 4) material.SetColor ("_Color4", color4);
+					if (numColors > 5) material.SetColor ("_Color5", color5);
+					if (numColors > 6) material.SetColor ("_Color6", color6);
+					if (numColors > 7) material.SetColor ("_Color7", color7);	
 				}
 				
-				material.SetColor ("_Color0", color0);
-				material.SetColor ("_Color1", color1);
-				
-				if (numColors > 2) material.SetColor ("_Color2", color2);
-				if (numColors > 3) material.SetColor ("_Color3", color3);
-				if (numColors > 4) material.SetColor ("_Color4", color4);
-				if (numColors > 5) material.SetColor ("_Color5", color5);
-				if (numColors > 6) material.SetColor ("_Color6", color6);
-				if (numColors > 7) material.SetColor ("_Color7", color7);
 				
 				RenderTexture scaled = RenderTexture.GetTemporary (horizontalResolution, verticalResolution);
-				scaled.filterMode = FilterMode.Point;
+				scaled.filterMode = filterMode;
 				Graphics.Blit (src, scaled, material);
 				Graphics.Blit (scaled, dest);
 				RenderTexture.ReleaseTemporary (scaled);
