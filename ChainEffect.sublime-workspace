@@ -544,6 +544,38 @@
 			}
 		},
 		{
+			"file": "Assets/Script/Object/GrassGenerator.js",
+			"settings":
+			{
+				"buffer_size": 1293,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Plugins/Retro Pixel/Scripts/RetroPixel.cs",
+			"settings":
+			{
+				"buffer_size": 2914,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/FireLink/FireLight.js",
+			"settings":
+			{
+				"buffer_size": 295,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/Script/Object/Grass.js",
+			"settings":
+			{
+				"buffer_size": 140,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "/Users/yibojiang/Downloads/builtin_shaders-4.5.4/DefaultResourcesExtra/Particle Alpha Blend.shader",
 			"settings":
 			{
@@ -604,6 +636,12 @@
 	],
 	"file_history":
 	[
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/FireLink.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Fireball.js",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/Retro Pixel.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Retro Pixel.meta",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Retro Pixel/Editor/RetroPixelEditor.cs",
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/GlowEffect.cs",
 		"/Users/yibojiang/Documents/GameDevelop/UnityTest/Prototype919/Assets/Game/Shaders/CustomTexture.shader",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Shader/HeatDistort.meta",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Arts/Hero.meta",
@@ -615,7 +653,6 @@
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/GlowCompose.shader",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/GlowConeTap.shader",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/_Sources/Shaders/GlowEffectDownsample.shader",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/GlowEffect.cs",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Shader/CustomGlow.shader",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Texture/HeatDistort.shader",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Shader/Water/WaterEffect.shader",
@@ -629,7 +666,6 @@
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/Unity/DeviceProfiles/LogitechDualActionProfile.cs",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Sources/Materials/FlameA.mat",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Particles/Smoke/Fluffy Smoke Large.prefab",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Fireball.js",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/GrassGenerator.js",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/LighteningGenerator.js",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Lightening.js",
@@ -723,15 +759,11 @@
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/EventTrigger.meta",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/NoiseEffect.cs",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/Transition.cs",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Retro Pixel.meta",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/Control/TwoAxisInputControl.cs",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Plugins/InControl Plugin/Library/Device/InputDevice.cs",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Animation/Girl.meta",
 		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Object/SrollingObj.js",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/InputController.js",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/Animation/EnemyAnimationEvent.js",
-		"/Users/yibojiang/Documents/GameDevelop/NaughtyKittiesProject/NaughtyKitties/Assets/Game/Scripts/Object/Entity.js",
-		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Standard Assets/Image Effects (Pro Only)/ScreenOverlay.js"
+		"/Users/yibojiang/Documents/GameDevelop/ChainEffectProject/ChainEffect/Assets/Script/InputController.js"
 	],
 	"find":
 	{
@@ -915,7 +947,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -944,7 +976,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -973,7 +1005,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -989,8 +1021,8 @@
 						"selection":
 						[
 							[
-								2271,
-								2271
+								553,
+								553
 							]
 						],
 						"settings":
@@ -1002,11 +1034,125 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "Assets/Script/Object/GrassGenerator.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1293,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								755,
+								755
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/Plugins/Retro Pixel/Scripts/RetroPixel.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2914,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1315,
+								1315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 170.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/Script/FireLink/FireLight.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 295,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								294,
+								295
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/Script/Object/Grass.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "/Users/yibojiang/Downloads/builtin_shaders-4.5.4/DefaultResourcesExtra/Particle Alpha Blend.shader",
 					"semi_transient": false,
 					"settings":
@@ -1031,7 +1177,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1083,6 +1229,22 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"retr",
+				"Plugins/Retro Pixel/Scripts/RetroPixel.cs"
+			],
+			[
+				"firelig",
+				"Script/FireLink/FireLight.js"
+			],
+			[
+				"retro",
+				"Plugins/Retro Pixel/Scripts/RetroPixel.cs"
+			],
+			[
+				"grass",
+				"Script/Object/Grass.js"
+			],
 			[
 				"heat",
 				"Shader/HeatDistort/HeatDistort.shader"
@@ -1578,22 +1740,6 @@
 			[
 				"dragonba",
 				"Assets/Game/Scripts/Controller/DragonBallController.js"
-			],
-			[
-				"barragec",
-				"Assets/Game/Scripts/Controller/BarrageLauncherController.js"
-			],
-			[
-				"richca",
-				"Assets/Game/Scripts/Controller/RichCatController.js"
-			],
-			[
-				"firegun.js",
-				"Assets/Game/Scripts/Controller/FireGunController.js"
-			],
-			[
-				"funne",
-				"Assets/Game/Scripts/Controller/FunnelController.js"
 			]
 		],
 		"width": 0.0

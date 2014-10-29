@@ -21,6 +21,8 @@ namespace AlpacaSound
 		SerializedProperty color5;
 		SerializedProperty color6;
 		SerializedProperty color7;
+		SerializedProperty filterMode;
+		//bool colorFilter;
 
 		void OnEnable ()
 		{
@@ -37,17 +39,24 @@ namespace AlpacaSound
 			color5 = serObj.FindProperty ("color5");
 			color6 = serObj.FindProperty ("color6");
 			color7 = serObj.FindProperty ("color7");
+			filterMode=serObj.FindProperty("filterMode");
+
+			//RetroPixel rp=(RetroPixel)target;
+			//colorFilter=rp.colorFilter;
 		}
 
 		override public void OnInspectorGUI ()
 		{
 			serObj.Update ();
 
-			//RetroPixel myTarget = (RetroPixel) target;
+			RetroPixel myTarget = (RetroPixel) target;
 
 			horizontalResolution.intValue = EditorGUILayout.IntField("Horizontal Resolution", horizontalResolution.intValue);
 			verticalResolution.intValue = EditorGUILayout.IntField("Vertical Resolution", verticalResolution.intValue);
 			numColors.intValue = EditorGUILayout.IntSlider("Number of colors", numColors.intValue, 2, RetroPixel.MAX_NUM_COLORS);
+			//filterMode= EditorGUILayout.EnumPopup("FilterMode", filterMode);
+			filterMode.intValue=EditorGUILayout.IntField("FilterMode", filterMode.intValue);
+			myTarget.colorFilter=EditorGUILayout.Toggle("Color Filter", myTarget.colorFilter);
 
 			if (numColors.intValue > 0) color0.colorValue = EditorGUILayout.ColorField("Color 0", color0.colorValue);
 			if (numColors.intValue > 1) color1.colorValue = EditorGUILayout.ColorField("Color 1", color1.colorValue);
