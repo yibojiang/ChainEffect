@@ -17,6 +17,8 @@ class Girl extends Entity{
 	//var follCheck:Transform;
 	var followDistance:float;
 
+	
+
 	function Start(){
 		super.Start();
 		sitState2 = Animator.StringToHash("Base Layer.Sit2");

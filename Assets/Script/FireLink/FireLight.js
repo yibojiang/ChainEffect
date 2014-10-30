@@ -11,5 +11,6 @@ function Start () {
 }
 
 function Update () {
+	
 	fireLight.transform.position.z=originPos+Random.Range(0,power);//power*Mathf.Sin(frequent*Time.time);
 }

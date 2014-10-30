@@ -14,6 +14,13 @@ var HP:float;
 var maxHP:float;
 var hurtForce:float=200;
 
+var waveGenerator:WaterWaveGenerator;
+function Walk(){
+	if (waveGenerator!=null){
+		waveGenerator.GenerateWave();	
+	}
+}
+
 function SetDir(_dir:int){
 	
 	flipDir=_dir % 2;
@@ -21,7 +28,8 @@ function SetDir(_dir:int){
 		return;
 	}
 	
-	body.localEulerAngles.y=180*GetFlipRotateFactor();
+	//body.localEulerAngles.y=180*GetFlipRotateFactor();
+	body.localScale.x=GetFlipDir();
 	UpdateDepth();
 }
 
@@ -63,7 +71,8 @@ function Flip(){
 		return;
 	}
 	
-	body.localEulerAngles.y=180*GetFlipRotateFactor();
+	//body.localEulerAngles.y=180*GetFlipRotateFactor();
+	body.localScale.x=GetFlipDir();
 	UpdateDepth();
 }
 
@@ -92,10 +101,16 @@ function Start () {
 function Update () {
 	if (alive){
 		if (vel.x>0){
-			SetDir(0);
+			if (GetFlipDir()<0){
+				SetDir(0);	
+			}
+			
 		}
 		else if (vel.x<0){
-			SetDir(1);
+
+			if (GetFlipDir()>0){
+				SetDir(1);
+			}
 		}
 
 		if (Mathf.Abs(vel.x)>maxWalkSpeed ){

@@ -10,14 +10,21 @@ class Player extends Entity{
 	private var runState:int=Animator.StringToHash("Base Layer.Run");
 	private var idleState:int=Animator.StringToHash("Base Layer.Idle");
 	private var readyAttackState:int=Animator.StringToHash("Base Layer.ReadyAttack");
+	private var standWithTorchState:int=Animator.StringToHash("Base Layer.StandWithTorch");
+	private var walkWithTorchState:int=Animator.StringToHash("Base Layer.WalkWithTorch");
 
 	var withGirl:boolean;
 
+	
 	function Start(){
 		super.Start();
 		//hurtState=Animator.StringToHash("Base Layer.Hurt");  
 		//atkState= Animator.StringToHash("Base Layer.Attack");
+
+		//anim.Play("StandWithTorch");
 	}
+
+	
 
 	function Update(){
 		var device:InputDevice=InputManager.ActiveDevice;
@@ -25,11 +32,15 @@ class Player extends Entity{
 			|| anim.GetCurrentAnimatorStateInfo(0).nameHash == runState 
 			|| anim.GetCurrentAnimatorStateInfo(0).nameHash == idleState 
 			|| anim.GetCurrentAnimatorStateInfo(0).nameHash == readyAttackState 
+			|| anim.GetCurrentAnimatorStateInfo(0).nameHash == standWithTorchState 
+			|| anim.GetCurrentAnimatorStateInfo(0).nameHash == walkWithTorchState 
 			){
 
 			if (controlOn){
 				if (device.LeftStickX.IsPressed){
 					vel.x=device.Direction.X*maxWalkSpeed;
+
+					
 				}
 				else{
 					if (Input.GetKey(KeyCode.LeftArrow)){

@@ -76,8 +76,8 @@ v2f vert(appdata v)
 	
 	// scroll bump waves
 	float4 temp;
-	//temp.xyzw = v.vertex.xzxz * _WaveScale4 / unity_Scale.w + _WaveOffset;
-	temp.xyzw = v.vertex.xzxz/ unity_Scale.w ;
+	temp.xyzw = v.vertex.xzxz * _WaveScale4 / unity_Scale.w/10 + _WaveOffset;
+	//temp.xyzw = v.vertex.xzxz/ unity_Scale.w + _WaveOffset;
 	o.bumpuv0 = temp.xy;
 	o.bumpuv1 = temp.wz;
 	
